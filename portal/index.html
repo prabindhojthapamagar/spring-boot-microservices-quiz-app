@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Question Bank</title>
+
+
+</head>
+
+<body>
+
+    <h1>Question Bank</h1>
+    <button onclick="loadQuestions('http://localhost:8080/question/allQuestions')">
+    All
+</button>
+
+<input type="text" id="categoryInput" placeholder="Search questions...">
+<button onclick="searchByCategory()">Search</button>
+
+<div>
+    <input type="text" id="title" placeholder="Question Title"><br>
+
+    <input type="text" id="option1" placeholder="Option 1"><br>
+
+    <input type="text" id="option2" placeholder="Option 2"><br>
+
+    <input type="text" id="option3" placeholder="Option 3"><br>
+
+    <input type="text" id="option4" placeholder="Option 4"><br>
+
+    <input type="text" id="difficulty" placeholder="Difficulty Level"><br>
+
+    <input type="text" id="answer" placeholder="Right Answer"><br>
+
+    <input type="text" id="category" placeholder="Category"><br>
+
+    <button onclick="addQuestion()">Add Question</button>
+
+</div>
+
+<div>
+    <input type="text" id="categoryName" placeholder="category Name for creating quiz"><br>
+    <input type="text" id="numQuestions" placeholder="Number of questions for quiz"><br>
+
+    <button onclick="getQuestionIdsForQuiz()">Get Question Ids for Quiz</button>
+</div>
+<div id="questions"></div>
+
+    <div id="questions"></div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
