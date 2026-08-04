@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Admin Dashboard</h1>
+
+    <div class="card">
+
+        <h2>Add Question</h2>
+
+        <input type="text" id="questionTitle" placeholder="Question">
+
+        <input type="text" id="option1" placeholder="Option 1">
+
+        <input type="text" id="option2" placeholder="Option 2">
+
+        <input type="text" id="option3" placeholder="Option 3">
+
+        <input type="text" id="option4" placeholder="Option 4">
+
+        <input type="text" id="rightAnswer" placeholder="Correct Answer">
+
+        <input type="text" id="category" placeholder="Category">
+
+        <input type="text" id="difficulty" placeholder="Difficulty">
+
+        <button onclick="addQuestion()">Add Question</button>
+
+    </div>
+
+    <br>
+
+    <div class="card">
+
+        <h2>Create Quiz</h2>
+
+        <input type="text" id="quizCategory" placeholder="Category">
+
+        <input type="number" id="numQuestions" placeholder="Number of Questions">
+
+        <input type="text" id="quizTitle" placeholder="Quiz Title">
+
+        <button onclick="createQuiz()">Create Quiz</button>
+
+    </div>
+
+    <br>
+
+    <button onclick="loadQuestions()">View All Questions</button>
+
+    <div id="questionList"></div>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+</html>

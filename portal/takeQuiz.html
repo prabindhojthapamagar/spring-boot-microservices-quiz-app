@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Take Quiz</h1>
+
+    <input
+        type="number"
+        id="quizId"
+        placeholder="Enter Quiz ID">
+
+    <button onclick="loadQuiz()">
+        Start Quiz
+    </button>
+
+    <hr>
+
+    <div id="quizContainer"></div>
+
+    <br>
+
+    <button id="submitBtn"
+            onclick="submitQuiz()"
+            style="display:none;">
+        Submit Quiz
+    </button>
+
+    <h2 id="score"></h2>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/takeQuiz.js"></script>
+
+</body>
+</html>
